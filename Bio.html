@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html class="mains">
+<head>
+  <title>Group-Programming</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+  <style>
+    .hero-image{
+      padding-top: 55px;
+      margin-left:160px;
+      background-image:url("https://www.nordquistdance.com/wp-content/uploads/2014/04/bokeh-cover-bg.jpg");
+      background-color:#cccccc;
+      height:200px;
+      background-position: center;
+      background-size:cover;
+    }
+
+    .hero-text{
+      padding-top:40px;
+      padding-left:500px;
+      color:#fff;
+    }
+    .sidenav {
+      font-size:0;
+      margin-top:55.1px;
+      height: 100vh;
+      width: 180px;
+      position: fixed;
+      top:0;
+      left: 0;
+      bottom:0;
+      /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(""); */
+      background-size: cover;
+      background:#f8f8f8;
+      background-position: centre;
+      background-repeat: no-repeat;
+      overflow-x: hidden;
+     }
+
+    .sidenav li a {
+      font-size:15px;
+      border: 1px solid transparent;
+      padding: 5px 10px;
+      color: #000;
+      text-decoration: none;
+      transition: 0.1s ease;
+      font-family:verdana;
+      display: block;
+    }
+
+    .sidenav li a:hover {
+      color: #000;
+      background-color:#c0c0c0;
+    }
+    .sidenav li.activa a{
+      background:transparent;
+      color:#000;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-family:tahoma;
+      font-weight: 200px;
+
+    }
+
+    .moon {
+      margin-left: 180px;
+      font-size: 28px;
+      padding: 0px 10px;
+     }
+     .mySlides {display:none}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      width:650px;
+      position: relative;
+      margin-left:20px;
+      margin-top: 40px;
+     }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      background-color: #000;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+     /* Position the "next button" to the right */
+    .next {
+      right: 25px;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev{
+      left:25px;
+      border-radius: 3px 0 0 3px;
+
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      font-family: tahoma;
+      color: #000;
+      font-size: 22px;
+      padding-top: 50px;
+      position: absolute;
+      top:50px;
+      left:700px;
+      bottom: 8px;
+      width: 65%;
+     }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      font-family: cursive;
+      color: #f2f2f2;
+      font-size: 16px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor:pointer;
+      height: 13px;
+      width: 13px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+    .text li{
+      padding-top: 15px;
+    }
+   </style>
+
+</head>
+<body>
+     <div class="navbar">
+        <img src="liom.jpg" alt="GeekSquad" class="logo">
+         <ul class="nav_ul">
+           <li><a href="#">Contact Us</a>
+           <ul class="nest">
+               <li><a href="mailto:geeksquadatword@gmail.com?cc=raianurag552@gmail.com&subject=enter_uour_subject_query_here&body=the body text goes here." target="_blank"><i class="fa fa-envelope"></i> email</a></li>
+               <li><a href="#">x</a></li>
+               <li><a href="#">x</a></li>
+           </ul>
+           </li>
+           <li><a href="#">About Us</a>
+           <ul class="nest">
+              <li><a href="https://www.youtube.com/channel/UCVbAo3xdHCpfN0gSEV58ePg" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></li>
+             <li><a href="#">x</a></li>
+             <li><a href="#">x</a></li>
+           </ul>
+           </li>
+           <li><a href="#">Know more</a>
+           <ul class="nest">
+              <li><a href="https://cbse.nic.in/newsite/index.html#main-content" target="_blank"><i class="fa fa-globe"></i> cbse</a></li>
+               <li><a href="#">x</a></li>
+               <li><a href="#">x</a></li>
+           </ul>
+           </li>
+           <li class="active"><a href="index.html"><i class="fa fa-home"></i></a></li>
+        </ul>
+     </div>
+   <div class="hero-image">
+     <div class="hero-text">
+     <h1 style="font-size:60px;font-family:gothic">Biology</h1>
+     <h3></h3>
+     </div>
+    </div>
+  <div class="sidenav">
+      <ul>
+        <li class="activa"><a>Navigation-links</a></li>
+        <li><a href="Eng.html">English</a><li>
+        <li><a href="Phy.html">Physics</a><li>
+        <li><a href="Chem.html">Chemistry</a><li>
+        <li><a href="Mat.html">Mathematics</a><li>
+        <li><a href="#" class="tok">Biology</a><li>
+        <li><a href="cs.html">Compter-Science</a></li>
+        <li class="activa"><a>Content-links</a></li>
+        <li><a href="#" onclick="document.documentElement.scrollTop=315;event.preventDefault()">Plant-Kingdom</a><li>
+        <li><a href="#" onclick="document.documentElement.scrollTop=1080;event.preventDefault()">Animal-Kingdom</a><li>
+        <li><a href="#" onclick="document.documentElement.scrollTop=1800;event.preventDefault()">Dissection of Hibiscus</a><li>
+
+      </ul>
+
+  </div>
+  <div class="moon">
+      <div class="livingworld">
+            <h1 style="font-family:Algerian,verdana; color:#696969; font-size:40px; padding-top:50px;padding-left:360px;"><i class="fas fa-microscope"></i> Living-World</h1><br>
+            <h2 style="font-family: tahoma;color:#32cd32; font-size:30px; padding-top:10px;padding-left:50px;"><i class="fas fa-seedling"></i> Plant-Kingdom</h2>
+
+            <div id="slideshow1" class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext" style="margin-left:110px;">1 / 6</div>
+                  <img src="images/one.jpeg" style="width:100%; height:490px;">
+                  <div class="text" style="text-align:left">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Bougainvillea spectabilis</i></li>
+                      <li>Family: Nictaginaceae</li>
+                      <li>Order: Caryophyllales</li>
+                      <li>Class: Magnoliopsida</li>
+                      <li>Division: Magnoliophyte</li>
+                      <li>Kingdom: Plantae</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext" style="margin-left:110px;">2 / 6</div>
+                  <img src="images/three.jpeg" style="width:100%; height:490px;">
+                  <div class="text" style="text-align:left">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Adenium arabicum</i></li>
+                      <li>Common name: Desert rose</li>
+                      <li>Family: Apocynaceae</li>
+                      <li>Order: Gentianales</li>
+                      <li>Class: Magnoliopsida</li>
+                      <li>Division: Magnoliophyta</li>
+                      <li>Kingdom: Plantae</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext" style="margin-left:110px;">3 / 6</div>
+                  <img src="images/four.jpeg" style="width:100%; height:490px;">
+                  <div class="text" style="text-align:left">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Paeonia suffruticosa</i></li>
+                      <li>Common name: Moutan peony</li>
+                      <li>Family: Paeoniaceae</li>
+                      <li>Order: Saxifragales</li>
+                      <li>Class: Magnoliopsida</li>
+                      <li>Division: Angiosperm</li>
+                      <li>Kingdom: Plantae</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext" style="margin-left:110px;">4 / 6</div>
+                  <img src="images/five.jpeg" style="width:100%; height:490px;">
+                  <div class="text" style="text-align:left">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Ixora chineses</i></li>
+                      <li>Common name: Chinese ixora</li>
+                      <li>Family: Rubiaceae</li>
+                      <li>Order: Gentianales</li>
+                      <li>Class: Magnoliopsida</li>
+                      <li>Division: Angiosperm</li>
+                      <li>Kingdom: Plantae</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext" style="margin-left:110px;">5 / 6</div>
+                  <img src="images/six.jpeg" style="width:100%; height:490px;">
+                  <div class="text" style="text-align:left">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Bougainvillea glabra</i></li>
+                      <li>Family: Nyctaginaceae</li>
+                      <li>Order: Arales</li>
+                      <li>Class: Liliopsida</li>
+                      <li>Division: Magnoliophyta</li>
+                      <li>Kingdom: Plantae</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext" style="margin-left:110px;">6 / 6</div>
+                  <img src="images/seven.jpeg" style="width:100%; height:490px;">
+                  <div class="text" style="text-align:left">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Spathiphyllum wallisii</i></li>
+                      <li>Family: Araceae</li>
+                      <li>Order: Arales</li>
+                      <li>Class: Liliopsida</li>
+                      <li>Division: Magnoliophyta</li>
+                      <li>Kingdom: Plantae</li>
+                    </ul>
+                  </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+                  <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
+                  <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+                  <span class="dot" onclick="currentSlide(4, slideshow1)"></span>
+                  <span class="dot" onclick="currentSlide(5, slideshow1)"></span>
+                  <span class="dot" onclick="currentSlide(6, slideshow1)"></span>
+                </div>
+            </div>
+            <br><br><hr style="color:#696969; margin-left:20px; margin-right:20px;"><br><br>
+            <h2 style="font-family: tahoma;color:#d2691e; font-size:30px; padding-top:10px;padding-left:50px;"><i class="fas fa-paw"></i> Animal Kingdom</h2>
+            <div id="slideshow2" class="slideshow-container" style="width:600px; margin-left:50px;">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 9</div>
+                  <img src="images/first.jpeg" style="width:100%">
+                  <div class="text" style="text-align:left; padding-top:0px;">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Panthera leo parsica</i></li>
+                      <li>Common name: Asiatic lion</li>
+                      <li>Family: Falidae</li>
+                      <li>Order: Carnivora</li>
+                      <li>Class: Mammalia</li>
+                      <li>Phyllum: Chordata</li>
+                      <li>Kingdom: Animalia</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 9</div>
+                  <img src="images/second.jpeg" style="width:100%">
+                  <div class="text" style="text-align:left; padding-top:0px;">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Canis lupus signatus</i></li>
+                      <li>Common name: Chinese ixora</li>
+                      <li>Family: Canidae</li>
+                      <li>Order: Carnivores</li>
+                      <li>Phyllum: Chordate</li>
+                      <li>Kingdom: Animalia</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 9</div>
+                  <img src="images/third.jpeg" style="width:100%">
+                  <div class="text" style="text-align:left; padding-top:0px;">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Elephas maximus sumatrensis</i></li>
+                      <li>Common name: Sumatran elephant</li>
+                      <li>Family: Elephantidae</li>
+                      <li>Order: Proboscidea</li>
+                      <li>Class: Mammalia</li>
+                      <li>Phyllum: Chordata</li>
+                      <li>Kingdom: Animalia</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 9</div>
+                  <img src="images/fourth.jpeg" style="width:100%">
+                  <div class="text" style="text-align:left; padding-top:0px;">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Antilope cervicapra</i></li>
+                      <li>Common name: Blackbuck</li>
+                      <li>Family: Bovidae</li>
+                      <li>Order: Artiodactyla</li>
+                      <li>Class: Mammalia</li>
+                      <li>Phyllum: Chordata</li>
+                      <li>Kingdom: Animalia</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 9</div>
+                  <img src="images/fifth.jpeg" style="width:100%">
+                  <div class="text" style="text-align:left; padding-top:0px;">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Eurema alitha</i></li>
+                      <li>Common name: Scalloped grass yellow</li>
+                      <li>Family: Pieridae</li>
+                      <li>Order: Lepidoptera</li>
+                      <li>Class: Insecta</li>
+                      <li>Phyllum: Arthropoda</li>
+                      <li>Kingdom: Animalia</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">6 / 9</div>
+                  <img src="images/sixth.jpeg" style="width:100%">
+                  <div class="text" style="text-align:left; padding-top:0px;">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Danaus genutia</i></li>
+                      <li>Common name: striped tiger</li>
+                      <li>Family: Nymphalidae</li>
+                      <li>Order: Lepidoptera</li>
+                      <li>Class: Insecta</li>
+                      <li>Phyllum: Arthropoda</li>
+                      <li>Kingdom: Animalia</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">7 / 9</div>
+                  <img src="images/seventh.jpeg" style="width:100%">
+                  <div class="text" style="text-align:left; padding-top:0px;">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Panthera tigris</i></li>
+                      <li>Common name: Bengal tiger</li>
+                      <li>Family: Felidae</li>
+                      <li>Order: Carnivora</li>
+                      <li>Class: Mammalia</li>
+                      <li>Phyllum: Chordata</li>
+                      <li>Kingdom: Animalia</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">8 / 9</div>
+                  <img src="images/eighth.jpeg" style="width:100%">
+                  <div class="text" style="text-align:left; padding-top:0px;">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1"> Parantica aglea</i></li>
+                      <li>Family: Nymphalidae</li>
+                      <li>Order: Lepidoptera</li>
+                      <li>Class: Insecta</li>
+                      <li>Phyllum: Arthropoda</li>
+                      <li>Kingdom: Animalia</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">9 / 9</div>
+                  <img src="images/nineth.jpeg" style="width:100%">
+                  <div class="text" style="text-align:left; padding-top:0px;">
+                    <ul>
+                      <li>Scientific name: <i style="color:#4169e1">Melursus ursinus</i></li>
+                      <li>Common name: Sloth bear</li>
+                      <li>Family: Ursidae</li>
+                      <li>Order: Carnivora</li>
+                      <li>Class: Mammalia</li>
+                      <li>Phyllum: Chordata</li>
+                      <li>Kingdom: Animalia</li>
+                    </ul>
+                  </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
+                  <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+                  <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
+                  <span class="dot" onclick="currentSlide(4, slideshow2)"></span>
+                  <span class="dot" onclick="currentSlide(5, slideshow2)"></span>
+                  <span class="dot" onclick="currentSlide(6, slideshow2)"></span>
+                  <span class="dot" onclick="currentSlide(7, slideshow2)"></span>
+                  <span class="dot" onclick="currentSlide(8, slideshow2)"></span>
+                  <span class="dot" onclick="currentSlide(9, slideshow2)"></span>
+                </div>
+            </div>
+      <script>
+                var slideshow1 = document.getElementById("slideshow1");
+                slideshow1.currentSlideIndex = 1;
+                showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+                var slideshow2 = document.getElementById("slideshow2");
+                slideshow2.currentSlideIndex = 1;
+                showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+                function plusSlides(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex += n, slideshow);
+                }
+
+                function currentSlide(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex = n, slideshow);
+                }
+
+                function showSlides(n, slideshow) {
+                var i;
+                var slides = slideshow.getElementsByClassName("mySlides");
+                var dots = slideshow.getElementsByClassName("dot");
+                if (n > slides.length) {slideshow.currentSlideIndex = 1}
+                if (n < 1) {slideshow.currentSlideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideshow.currentSlideIndex-1].style.display = "block";
+                dots[slideshow.currentSlideIndex-1].className += " active";
+                }
+
+        </script>
+               <p style="background-color:#dcdcdc;font-family:tahoma; color:#696969; font-size:15px; margin-top:10px;padding-left:20px;padding-right:20px;">The pictures haven`t been borrowed from the internet and(or) any other source. Picture credits:- Sanskriti Tyagi and Bhawana Agarwal.</p>
+               <br><br><br>
+               <h2 style="font-family: tahoma;color:#4169e1; font-size:30px; padding-top:10px;padding-left:50px;"><i class="fas fa-diagnoses"></i> Dissection of <i>Hibiscus</i> flower</h2>
+               <iframe width="850" height="500" src="https://www.youtube.com/embed/KphT3dF6DQs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-left:150px; padding-top:50px;"></iframe>
+               <p style="background-color:#dcdcdc;font-family:tahoma; color:#696969; font-size:15px; margin-top:10px;padding-left:20px;padding-right:20px;">Video credits: Sanskriti Tyagi.</p>
+               <br><br><br><br>
+</body>
+</html>

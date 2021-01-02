@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Group-Programming</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family:Gothic;
+  }
+  div.main{
+    min-width: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("https://wallpaperxyz.com/wp-content/uploads/1920x1080-HD-High-Resolution-Desktop-Wallpapers-Wallpaperxyz-dot-Com-9.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size:cover;
+    max-width: 2000px;
+    margin: auto;
+  }
+
+  div.navbar{
+    min-width: 600px;
+    top:0;
+    width: 100%;
+    height: 55px;
+    background-color:#f5fffa;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px 0;
+  }
+
+  .nav_ul{
+    list-style-type: none;
+    padding-right: 10px;
+  }
+
+  .nav_ul li{
+    float:right;
+    width: 115px;
+    font-size: 0;
+    line-height: 51px;
+    text-align: center;
+
+  }
+
+  .nav_ul li a{
+    font-family:tahoma;
+    padding:auto;
+    font-size: 16px;
+    text-decoration:none;
+    color: #000;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+    display: block;
+  }
+
+  .nav_ul li a:hover{
+    background-color: #E6E6FA;
+    color: #000;
+    transition: 0.5s all ease;
+  }
+
+  .nav_ul li ul li{
+    display:none;
+    line-height: 36.5px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+    background-color:#E6E6FA;
+    transition: 1s all;
+
+  }
+  .nav_ul li.active a{
+    position:absolute;
+    font-size: 30px;
+    right:420px;
+    padding-right: 18px;
+    padding-left: 18px;
+    align-items: center;
+  }
+  .nav_ul li:hover ul li{
+    background-color: #f5fffa;
+    display: block;
+    transition: 1s all;
+  }
+
+  .logo{
+    margin-top: 0px;
+    padding-right: 1px;
+    float: right;
+    width: 75px;
+    height:53px;
+    cursor:pointer;
+  }
+  .title{
+    padding-top: 250px;
+    min-width: 400px;
+    color: #E6E6FA;
+    font-size: 40px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .tok{
+    background: #c0c0c0;
+  }
+
+   body{
+     text-align: center;
+   }
+   .nav_ul li.active a
+   {background-color:transparent;
+     color:#000;
+   }
+   .foof{
+     min-width: 600px;
+     background:transparent;
+     line-height: 40px;
+     color:#000;
+     position: fixed;
+     width:100%;
+     bottom:0;
+     box-shadow: rgba(0,0,0,0.3) 6px 0px 0px 2px;
+     cursor: pointer;
+   }
+   .foof p{
+     float: left;
+     padding-left: 20px;
+   }
+   .foof b{
+     font-family: tahoma;
+     font-weight:300;
+   }
+   button{
+     min-width: 10px;
+     text-decoration: none;
+     background-color:transparent;
+     color:#fff;
+     padding: 10px 0px;
+     border-radius: 8px;
+     font-size: 16px;
+     margin-top: 20px;
+     margin-right: 2px;
+     border: 1px solid #FFF;
+   }
+   .btn{
+     min-width: 10px;
+     font-family: Tahoma, Verdana, sans-serif;
+     border-radius: 8px;
+     padding: 12px 20px;
+     text-decoration: none;
+     transition: 0.5s ease;
+     color: #fff;
+   }
+   .btn:hover{
+     background-color: #fff;
+     color: #000;
+   }
+
+  </style>
+
+</head>
+<body>
+     <div class="navbar">
+         <img src="liom.jpg" alt="PROTECH" class="logo">
+         <ul class="nav_ul">
+           <li><a href="#">Contact Us</a>
+           <ul class="nest">
+               <li><a href="mailto:geeksquadatword@gmail.com?cc=raianurag552@gmail.com&subject=enter_uour_subject_query_here&body=the body text goes here." target="_blank"><i class="fa fa-envelope"></i> email</a></li>
+               <li><a href="#">x</a></li>
+               <li><a href="#">x</a></li>
+           </ul>
+           </li>
+           <li><a href="#">About Us</a>
+           <ul class="nest">
+           <li><a href="https://www.youtube.com/channel/UCVbAo3xdHCpfN0gSEV58ePg" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></li>
+             <li><a href="#">x</a></li>
+             <li><a href="#">x</a></li>
+           </ul>
+           </li>
+           <li><a href="#">Know more</a>
+           <ul class="nest">
+              <li><a href="https://cbse.nic.in/newsite/index.html#main-content" target="_blank"><i class="fa fa-globe"></i> cbse</a></li>
+               <li><a href="#">x</a></li>
+               <li><a href="#">x</a></li>
+          </ul>
+           </li>
+           <li class="active"><a href="index.html"><i class="fa fa-home"></i></a></li>
+        </ul>
+      </div>
+
+  <div class="main">
+    <h1 class="title"><big>GEEKSQUAD PRESENTS<br><small><small><small><small>An art integrated presentationon the following:</small></small></small></small></big><br></h1>
+     <span><button class=" button"><a href="Phy.html" class="btn"> Physics</a></button></span>
+     <span><button class=" button"><a href="Chem.html" class="btn"> Chemistry </a></button></span>
+     <span><button class=" button"><a href="Mat.html" class="btn"> Mathematics </a></button></span>
+     <span><button class=" button"><a href="Bio.html" class="btn"> Biology </a></button></span>
+     <span><button class=" button"><a href="cs.html" class="btn"> Computer-Science </a></button></span>
+     <span><button class=" button"><a href="Eng.html" class="btn"> English </a></button></span>
+     <div class="foof">
+       <p><b>Copyright 2020-21. All rights reserved</b></p>
+     </div>
+  </div>
+
+
+
+</body>
+</html>

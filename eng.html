@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html class="mains">
+<head>
+  <title>Group-Programming</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+  <style>
+    .mains{
+      background: #f5f5f5;
+    }
+    .hero-image{
+      max-width: 3000px;
+      padding-top: 55px;
+      margin-left:160px;
+      background-image:url("https://www.nordquistdance.com/wp-content/uploads/2014/04/bokeh-cover-bg.jpg");
+      background-color:#cccccc;
+      height:200px;
+      background-position: center;
+      background-size:cover;
+    }
+
+    .hero-text{
+      padding-top:40px;
+      padding-left:500px;
+      color:#fff;
+    }
+    .sidenav {
+      font-size:0;
+      margin-top:55.1px;
+      height: 100vh;
+      width: 180px;
+      position: fixed;
+      top:0;
+      left: 0;
+      bottom:0;
+      /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(""); */
+      background-size: cover;
+      background:#E6E6FA;
+      background-position: centre;
+      background-repeat: no-repeat;
+      overflow-x: hidden;
+     }
+
+    .sidenav li a {
+      font-size:15px;
+      border: 1px solid transparent;
+      padding: 5px 10px;
+      color: #000;
+      text-decoration: none;
+      transition: 0.1s ease;
+      font-family:verdana;
+      display: block;
+    }
+
+    .sidenav li a:hover {
+      color: #000;
+      background-color:#c0c0c0;
+    }
+    .sidenav li.activa a{
+      background:transparent;
+      color:#000;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-family:tahoma;
+      font-weight: 200px;
+
+    }
+
+    .moon {
+      box-sizing: border-box;
+      color:#000;
+      margin-left: 180px;
+      font-size: 28px;
+      padding: 0px 10px;
+     }
+    .tok{
+      background: #c0c0c0;
+    }
+    .mySlides {display:none}
+
+   /* Slideshow container */
+   .slideshow-container {
+     max-width: 1000px;
+     width:650px;
+     position: relative;
+     margin-top: 40px;
+    }
+
+   /* Next & previous buttons */
+   .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 45%;
+     width: auto;
+     padding: 16px;
+     margin-top: -22px;
+     background-color: #000;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+   }
+
+    /* Position the "next button" to the right */
+   .next {
+     right: 25px;
+     border-radius: 3px 0 0 3px;
+   }
+   .prev{
+     left:25px;
+     border-radius: 3px 0 0 3px;
+
+   }
+
+   /* On hover, add a black background color with a little bit see-through */
+   .prev:hover, .next:hover {
+     background-color: rgba(0,0,0,0.8);
+   }
+
+   /* Caption text */
+   .text {
+     font-family: tahoma;
+     color: #fff;
+     font-size: 22px;
+     padding-top: 50px;
+     position: absolute;
+     top:450px;
+     left:0px;
+     width: 100%;
+     background: rgb(0, 0, 0); /* Fallback color */
+     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+     color: #f1f1f1;
+    }
+    .text p{
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+   /* Number text (1/3 etc) */
+   .numbertext {
+     font-family: cursive;
+     color: #f2f2f2;
+     font-size: 16px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+     background: rgb(0, 0, 0); /* Fallback color */
+     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+     color: #f1f1f1;
+   }
+
+   /* The dots/bullets/indicators */
+   .dot {
+     cursor:pointer;
+     height: 13px;
+     width: 13px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+   }
+
+   .active, .dot:hover {
+     background-color: #717171;
+   }
+
+   /* Fading animation */
+   .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+   }
+
+   @-webkit-keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+   }
+
+   @keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+   }
+
+   /* On smaller screens, decrease text size */
+   @media only screen and (max-width: 300px) {
+     .prev, .next,.text {font-size: 11px}
+   }
+
+   .text li{
+     padding-top: 15px;
+   }
+   #doc1,#doc2 {
+     display: inline-block;
+     width: 47%;
+     height: 100%
+   }
+   #doc1{
+     float: inherit;
+   }
+   </style>
+
+</head>
+<body translate="no">
+     <div class="navbar">
+        <img src="liom.jpg" alt="PROTECH" class="logo">
+         <ul class="nav_ul">
+           <li><a href="#">Contact Us</a>
+           <ul class="nest">
+               <li><a href="mailto:geeksquadatword@gmail.com?cc=raianurag552@gmail.com&subject=enter_uour_subject_query_here&body=the body text goes here." target="_blank"><i class="fa fa-envelope"></i> email</a></li>
+               <li><a href="#">x</a></li>
+               <li><a href="#">x</a></li>
+           </ul>
+           </li>
+           <li><a href="#">About Us</a>
+           <ul class="nest">
+              <li><a href="https://www.youtube.com/channel/UCVbAo3xdHCpfN0gSEV58ePg" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></li>
+             <li><a href="#">x</a></li>
+             <li><a href="#">x</a></li>
+           </ul>
+           </li>
+           <li><a href="#">Know more</a>
+           <ul class="nest">
+            <li><a href="https://cbse.nic.in/newsite/index.html#main-content" target="_blank"><i class="fa fa-globe"></i> cbse</a></li>
+               <li><a href="#">x</a></li>
+               <li><a href="#">x</a></li>
+           </ul>
+           </li>
+           <li class="active"><a href="index.html"><i class="fa fa-home"></i></a></li>
+        </ul>
+     </div>
+   <div class="hero-image">
+     <div class="hero-text">
+     <h1 style="font-size:60px;font-family:gothic">English</h1>
+     <h3></h3>
+     </div>
+    </div>
+  <div class="sidenav">
+      <ul>
+        <li class="activa"><a>Navigation-links</a></li>
+        <li><a href="#" class="tok">English</a><li>
+        <li><a href="Phy.html">Physics</a><li>
+        <li><a href="Chem.html">Chemistry</a><li>
+        <li><a href="Mat.html">Mathematics</a><li>
+        <li><a href="Bio.html">Biology</a><li>
+        <li><a href="cs.html">Compter-Science</a></li>
+        <li class="activa"><a>Content-links</a></li>
+        <li><a href="#">Content-1</a><li>
+        <li><a href="#">Content-2</a><li>
+        <li><a href="#">Content-3</a><li>
+
+
+      </ul>
+
+  </div>
+   <div class="moon">
+     <h1 style="font-family:Lucida Calligraphy, Comic Sans MS; color:#696969; font-size:40px; padding-top:50px;padding-left:360px;"><i class="fa fa-paint-brush"></i> Street-Art</h1><br>
+     <p style="font-family: gothic;color:#000; font-size:30px; padding-top:10px;padding-left:30px;padding-right: 30px;font-size: 25px;">Street-wall paintings are usually the representation of the abstract ideas of the artists. These are independent visual art created in public locations for public visibility. It makes the walls look artistic and realistic. Street art keeps urban areas and their residents energized and inspired. In some areas artists and building owners come together to foster the creation of artwork that can be viewed as beautifying and reviving a city, rather than destroying it.</p>
+     <div id="slideshow1" class="slideshow-container" style="width:800px; margin-left:200px;">
+         <div class="mySlides fade">
+           <div class="numbertext">1 / 4</div>
+           <img src="images2/4.jpeg" style="width:100%;height:500px;" >
+           <div class="text" style="text-align:left; padding-top:0px;">
+             <p>Photo shot at: so and so place</p>
+           </div>
+         </div>
+         <div class="mySlides fade">
+           <div class="numbertext">2 / 4</div>
+           <img src="images2/3.jpeg" style="width:100%;height:500px;">
+           <div class="text" style="text-align:left; padding-top:0px;">
+             <p>sfs</p>
+           </div>
+         </div>
+         <div class="mySlides fade">
+           <div class="numbertext">3 / 4</div>
+           <img src="images2/1.jpeg" style="width:100%;height:500px;">
+           <div class="text" style="text-align:left; padding-top:0px;">
+             <p>sfs</p>
+           </div>
+         </div>
+         <div class="mySlides fade">
+           <div class="numbertext">4 / 4</div>
+           <img src="images2/2.jpeg" style="width:100%;height:500px;">
+           <div class="text" style="text-align:left; padding-top:0px;">
+             <p>sfs</p>
+           </div>
+         </div>
+         <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+         <div style="text-align:center">
+           <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
+           <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+           <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
+           <span class="dot" onclick="currentSlide(4, slideshow2)"></span>
+         </div>
+     </div>
+  <script>
+         var slideshow1 = document.getElementById("slideshow1");
+         slideshow1.currentSlideIndex = 1;
+         showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+         var slideshow2 = document.getElementById("slideshow2");
+         slideshow2.currentSlideIndex = 1;
+         showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+         function plusSlides(n, slideshow) {
+         showSlides(slideshow.currentSlideIndex += n, slideshow);
+         }
+
+         function currentSlide(n, slideshow) {
+         showSlides(slideshow.currentSlideIndex = n, slideshow);
+         }
+
+         function showSlides(n, slideshow) {
+         var i;
+         var slides = slideshow.getElementsByClassName("mySlides");
+         var dots = slideshow.getElementsByClassName("dot");
+         if (n > slides.length) {slideshow.currentSlideIndex = 1}
+         if (n < 1) {slideshow.currentSlideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideshow.currentSlideIndex-1].style.display = "block";
+         dots[slideshow.currentSlideIndex-1].className += " active";
+         }
+
+    </script>
+    <p style="font-family:tahoma;text-align:center;color:#000; font-size:30px; padding-top:50px;padding-left:30px; font-size: 25px;"><b>"Art is unquestionably one of the purest and highest elements in human happiness.<br> It trains the mind through the eye, and the eye through the mind.<br> As the sun colours flowers, so does art colour life."</b></p>
+    <p style=" text-align:justify;font-family: gothic;color:#000; font-size:30px; padding-top:20px;padding-left:30px; padding-right: 30px;font-size: 25px;">Though any form of artwork catches our attention, it is the street art which fascinates us the most.<br>
+they add life to public walls, random empty spaces and the corners of the main crossings. These days a street art fever is raging through urban India and street artists from various parts of the country and all over the world are collaborating with non profit organization to showcase their creative work.<br><br>
+Bengaluru street art scene is also drawing many talented individuals who are voicing various social issues through visual art. The best part of street art is its free and easy accessiblity. This makes it reachable to a much wider audience and Bangalore is one city where they are blooming everywhere in vibrant colours.<br>
+Being one of the most happening areas in the city, it’s probably not surprising that MG Road has some of the most impressive graffiti in the city. We particularly love the vivid typography-heavy graffiti found at different spots in the area.</p><br>
+    <hr style="color:#696969; margin-left:20px; margin-right:20px;">
+    <h1 style="font-family:Lucida Calligraphy, Comic Sans MS; color:#696969; font-size:40px; padding-top:50px;padding-left:360px;"><i class="fa fa-transgender"></i> Trans-Identity</h1><br>
+    <br>
+    <p style="text-align:justify;font-family: gothic;color:#000; font-size:30px; padding-top:20px;padding-left:30px; padding-right: 40px;font-size: 25px;"><img src="images2/5.jpeg" style=" float:left; width:300px;height:170px;padding-right:20px;" >Art can be a way to express your voice, and the way we interpret it can help to amplify voices in the fight for equality. Many creatives have silently contributed to culture, waiting for the moment that society will be ready to speak not just about being transgender – but also transgender art.<br><br>Transgender is an umbrella term – it includes not only people with a gender identity that is opposite to their assigned sex; but also people who identify as non-binary or belonging to the “third gender.”</p>
+    <p style=" text-align:justify;font-family: gothic;color:#000; font-size:30px; padding-top:10px;padding-left:30px; padding-right: 30px;font-size: 25px;">Among institutions researching the history and fighting for the “new canon” are museums such as the Museum of Transgender History and Art. Founded in 2013, MOTHA focuses on collecting examples of transgender visual history<br>Transgender images are popping up in contemporary art with as much frequency nowadays as fish in formaldehyde and religious figures in elephant dung. In other words, where transgression is called for a gender ambiguous image is never far behind. But we have recently witnessed very particular renderings of the transgender theme: now, at the start of the twenty-first century, it tends to be the female-to-male (FTM) transgender body which captures the popular imagination and the avant-garde eye alike. And it is in these intimations of new or 'other' masculinity that gender takes an unexpected turn.</p>
+    <hr style="color:#696969; margin-left:20px; margin-right:20px; margin-top:30px;">
+    <h1 style="font-family:Lucida Calligraphy, Comic Sans MS; color:#696969; font-size:40px; padding-top:50px;padding-left:360px;"><i class="fa fa-envelope"></i> Invitation</h1><br><br>
+    <div id="doc1" style="padding-left:30px;"><img src="images2/letter.png" height="300px;"></div><div id="doc2"><iframe src="Invitation.pdf" width="552px;" height="740px"></iframe></div>
+
+    <p style="background-color:#dcdcdc;font-family:tahoma; color:#696969; font-size:15px; margin-top:10px;padding-left:20px;padding-right:20px; padding-top:7px; padding-bottom:7px;">Invitation credits: Anurag Rai.</p><br><br>
+    <hr style="color:#696969; margin-left:20px; margin-right:20px;"><br><br>
+    <h1 style="font-family:Lucida Calligraphy, Comic Sans MS; color:#696969; font-size:40px; padding-top:0px;padding-left:300px;"><i class="fa fa-pencil"></i>Letter to the Editor</h1><br><br>
+    <div style="margin-left: 50px;background-image:url(backy.jpg); background-size:cover; width:1050px; height:1370px;">
+      <p style="font-family:Lucida Calligraphy; font-size:18px; padding-left: 85px; padding-top: 100px; padding-right:80px;">RT Nagar<br>Hebbal<br>Bengaluru- 560032<br><br>28 December 2020<br><br>The Editor<br>The Hindustan Times<br>Bengaluru-560032<br><br>Sub: Boosting tourism-industry in India<br><br>Sir/Madam<br>Through the columns of you distinguished newspaper, I wish to highlight the tremendous potentiality that tourism industry has in India. Tourism is one of the biggest and fastest growing industries globally, and it affects the economic, socio- cultural, environmental and educational resources of nations. It can aid in growth and development of various industries directly linked with the tourism industry such as transportation, accommodation, wildlife, arts and entertainment.<br><br>It has been a great shame for us that India has not been even among the top 10 in international tourism. We have the breathtaking views of the Himalayas, beautiful valleys, wonderful hill stations and a very rich wildlife. We have the Taj Mahal and Fatehpur Sikri in Agra, Rock garden in Chandigarh, Madurai and Thanjavur in Tamil Nadu, Nalanda in Bihar, Sanchi in Madhya Pradesh and other innumerable monuments and tourist spots in India. Ours is a rich heritage with diversified languages, culture, clothings and delicacies making India a potential tourism-hub like no other.
+      </p>
+      <p style="font-family:Lucida Calligraphy; font-size:18px; padding-left: 85px; padding-top:0px; padding-right:80px;">It is high time that we revamp our strategies and design schemes to keep our tourists safe and satisfied. The preservation of the tourist spots and historical monuments should be given due consideration. Extensive work needs to be done on the cleanliness and the beautification of the country in order to attract foreign tourists.<br>
+      Domestic tourism can’t be neglected, states like Karnataka and Kerala have shown the way to other states of India. They have attracted domestic tourists by providing clean and affordable accommodation. Enhanced infrastructure such as well-planned roads, airports and good hygiene will surely encourage tourists to visit this beautiful country of ours. Promoting tourism must be a top priority as it can easily be a money spinner for India bringing in valuable income to the country.<br><br>
+      A considerable governmental and authoritative effort is significant just as it becomes the moral duty of every citizen to be in their best behavior while putting forth a hospitable nature towars the tourists and making sure that they leave India with tremendous satisfaction.<br><br>
+      Thanking You<br>Yours sincerely<br>Bhawana
+      </p>
+     <br><br><br><br><br><br>
+   </div><br>
+    <hr style="color:#696969; margin-left:20px; margin-right:20px;"><br><br>
+    <h1 style="font-family:Lucida Calligraphy, Comic Sans MS; color:#696969; font-size:40px; padding-top:0px;padding-left:300px;"><i class="fa fa-tree"></i>Poem</h1><br>
+    <iframe src="Poem.pdf" width="702px;" height="740px;" style="margin-left:200px; margin-right:20px;" ></iframe><br><br>
+  </div>
+
+</body>
+</html>
