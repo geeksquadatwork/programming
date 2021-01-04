@@ -89,5 +89,5 @@ div.navbar{
   min-width:80.5%;
 }
 @media only screen and (min-width: 1000px) {
-  .prev, .next,.text,.moon,.main {font-size: 11px}
+  .prev, .next,.text,.moon,.main {font-size:1vw}
 }
