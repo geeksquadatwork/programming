@@ -89,8 +89,8 @@ div.navbar{
   min-width: 1000px;
 }
 @media only screen and (min-width: 1000px) {
-  .moon,{font-size:1vw}
+  .moon{font-size:1vw}
 }
 @media only screen and (min-width: 1000px) {
-  .moon,{margin-left: 20%}
+  .moon{margin-left:20%}
 }
