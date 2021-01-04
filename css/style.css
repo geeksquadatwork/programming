@@ -83,10 +83,10 @@ div.navbar{
   background: #c0c0c0;
 }
 .moon{
-  min-width: 84.5%;
+  min-width: 80.5%;
 }
 .hero-image{
-  min-width:84.5%;
+  min-width:80.5%;
 }
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
