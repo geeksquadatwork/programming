@@ -88,6 +88,6 @@ div.navbar{
 .hero-image{
   min-width:80.5%;
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 1000px) {
   .prev, .next,.text {font-size: 11px}
 }
