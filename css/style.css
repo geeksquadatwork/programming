@@ -52,7 +52,7 @@ div.navbar{
   line-height: 36.5px;
   height: 40px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
-  background-color:#E6E6FA;
+  background:rgba(255, 255,255, 0.5);
   transition: 1s all;
 
 }
@@ -65,7 +65,7 @@ div.navbar{
   align-items: center;
 }
 .nav_ul li:hover ul li{
-  background-color: #f5fffa;
+  background:hsla(255, 255,255 , 1);
   display: block;
   transition: 1s all;
 }
