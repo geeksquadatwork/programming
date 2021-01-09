@@ -180,6 +180,23 @@
 
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtns" title="Go to top"><i class="fa fa-arrow-up" style="color:#000; font-size:20px;"></i></button>
+  <script>
+  var mybutton = document.getElementById("myBtns");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
   <div class="navbar">
       <img src="liom.jpg" alt="PROTECH" class="logo">
       <ul class="nav_ul">

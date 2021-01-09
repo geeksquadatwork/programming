@@ -86,10 +86,28 @@ div.navbar{
   background: #c0c0c0;
 }
 .vaah{
-  position: absolute;
-  bottom: 0;
   background-image:url("https://images.unsplash.com/photo-1489549132488-d00b7eee80f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80");
-
+}
+#myBtns {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: 2px solid #000;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 45px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+ }
+ #myBtns :hover {
+  border-radius: 59px;
+  padding: 3px;
 }
 .moon{
   min-width: 1000px;
