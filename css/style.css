@@ -121,5 +121,5 @@ div.navbar{
   min-width: 600px;
 }
 @media only screen and (min-width: 1000px) {
-  .moon,.hero-image,.text{font-size:1vw}
+  .moon,.hero-image{font-size:1vw}
 }
