@@ -118,7 +118,7 @@ div.navbar{
   min-width: 1000px;
 }
 .mainbt{
-  min-width: 600px;
+  min-width: 300px;
 }
 @media only screen and (min-width: 1000px) {
   .moon,.hero-image{font-size:1vw}
